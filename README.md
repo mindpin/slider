@@ -1,2 +1,12 @@
-# slider
-移动课程/演示文稿编辑发布服务，slider 是暂定名
+## 编译方法
+工程使用 gulp 组织源代码和进行编译。
+
+系统内需要安装 node.js
+```
+npm install -g gulp # 安装 gulp
+npm install # 安装环境依赖
+gulp watch # 启动编译进程
+```
+
+### 查看范例
+ruby -run -e httpd . -p 4000
