@@ -2,7 +2,7 @@
   jQuery(function() {
     return window.sr = new scrollReveal({
       mobile: true,
-      reset: false,
+      reset: true,
       viewport: jQuery('.page-sample')[0],
       easing: 'ease-in-out',
       enter: 'right',
