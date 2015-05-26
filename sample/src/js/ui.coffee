@@ -1,4 +1,6 @@
 jQuery ->
+  over = jQuery('.page-sample').data('over') || '1s'
+
   window.sr = new scrollReveal {
     mobile: true
     reset: true
@@ -6,7 +8,7 @@ jQuery ->
 
     easing: 'ease-in-out'
     enter: 'right'
-    over: '1s'
+    over: over
     move: '100px'
     scale: {
       direction: 'up'

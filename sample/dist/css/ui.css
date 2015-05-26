@@ -5003,3 +5003,178 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin: 30px 15px; }
+
+@font-face {
+  font-family: "SemplicitaPro-Light";
+  src: url("../../webfonts/2C0EFB_0_0.eot");
+  src: url("../../webfonts/2C0EFB_0_0.woff") format("woff"), url("../../webfonts/2C0EFB_0_0.ttf") format("truetype"); }
+.page-sample.sample2 {
+  background-color: #fff;
+  color: #666;
+  font-family: "SemplicitaPro-Light"; }
+  .page-sample.sample2 .s2.header-bg {
+    background-image: url(http://img.teamkn.com/i/laqvzwaH.png@480h);
+    width: 100%;
+    padding-bottom: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .page-sample.sample2 .s2.logo {
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px; }
+    .page-sample.sample2 .s2.logo img {
+      float: left; }
+    .page-sample.sample2 .s2.logo span {
+      float: left;
+      font-family: "SemplicitaPro-Light";
+      font-size: 32px;
+      height: 54px;
+      line-height: 54px;
+      margin-left: 10px; }
+  .page-sample.sample2 .s2.hello h2 {
+    color: #0075ED;
+    text-align: center;
+    font-family: "SemplicitaPro-Light";
+    font-size: 20px;
+    margin: 30px 0 10px 0; }
+  .page-sample.sample2 .s2.hello .s {
+    font-family: "SemplicitaPro-Light";
+    text-align: center;
+    font-size: 18px; }
+  .page-sample.sample2 .s2.section {
+    padding: 20px 40px; }
+    .page-sample.sample2 .s2.section h2 {
+      color: #0075ED;
+      font-family: "SemplicitaPro-Light";
+      font-size: 20px;
+      margin: 20px 0 10px 0; }
+    .page-sample.sample2 .s2.section .s {
+      font-family: "SemplicitaPro-Light";
+      font-size: 16px; }
+  .page-sample.sample2 .s2.clients:before, .page-sample.sample2 .s2.clients:after {
+    content: "";
+    display: table; }
+  .page-sample.sample2 .s2.clients:after {
+    clear: both; }
+  .page-sample.sample2 .s2.clients h2 {
+    color: #0075ED;
+    font-family: "SemplicitaPro-Light";
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px; }
+  .page-sample.sample2 .s2.clients img {
+    background-color: #C0C0C0;
+    padding: 5%;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    border: dashed 1px rgba(255, 255, 255, 0.5); }
+  .page-sample.sample2 .s2.numbers {
+    font-family: "SemplicitaPro-Light";
+    background-color: #1070AE;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 40px; }
+    .page-sample.sample2 .s2.numbers .n {
+      font-size: 60px;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 10px; }
+    .page-sample.sample2 .s2.numbers .s {
+      text-align: center;
+      margin-bottom: 20px; }
+  .page-sample.sample2 .s2.awards h2 {
+    color: #0075ED;
+    font-family: "SemplicitaPro-Light";
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px; }
+  .page-sample.sample2 .s2.awards img {
+    width: 100%; }
+  .page-sample.sample2 .s2.awards .aa {
+    position: relative; }
+  .page-sample.sample2 .s2.awards .aw {
+    width: 100%;
+    padding-bottom: 100%; }
+    .page-sample.sample2 .s2.awards .aw.a1 {
+      background-image: url("http://img.teamkn.com/i/IYMvyUZO.jpg"); }
+    .page-sample.sample2 .s2.awards .aw.a2 {
+      background-image: url("http://img.teamkn.com/i/fgPVssjO.jpg"); }
+    .page-sample.sample2 .s2.awards .aw.a3 {
+      background-image: url("http://img.teamkn.com/i/JRE6hpFL.jpg"); }
+    .page-sample.sample2 .s2.awards .aw.a4 {
+      background-image: url("http://img.teamkn.com/i/T7KdHgm3.jpg"); }
+  .page-sample.sample2 .s2.awards .t {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 117, 237, 0.8);
+    color: white;
+    font-family: "SemplicitaPro-Light";
+    text-align: center;
+    font-size: 25px;
+    padding-top: 120px;
+    font-weight: bold; }
+  .page-sample.sample2 .s2.works {
+    margin: 5px; }
+    .page-sample.sample2 .s2.works h2 {
+      color: #0075ED;
+      font-family: "SemplicitaPro-Light";
+      font-size: 20px;
+      margin: 20px 0 10px 0;
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 30px; }
+    .page-sample.sample2 .s2.works:before, .page-sample.sample2 .s2.works:after {
+      content: "";
+      display: table; }
+    .page-sample.sample2 .s2.works:after {
+      clear: both; }
+    .page-sample.sample2 .s2.works .img.i1 {
+      background-image: url("http://img.teamkn.com/i/bWwThUfi.jpg@200w"); }
+    .page-sample.sample2 .s2.works .img.i2 {
+      background-image: url("http://img.teamkn.com/i/CcwraYrJ.jpg@200w"); }
+    .page-sample.sample2 .s2.works .img.i3 {
+      background-image: url("http://img.teamkn.com/i/CwifcMsv.jpg@200w"); }
+    .page-sample.sample2 .s2.works .img.i4 {
+      background-image: url("http://img.teamkn.com/i/QQXGPAWH.jpg@200w"); }
+    .page-sample.sample2 .s2.works .img.i5 {
+      background-image: url("http://img.teamkn.com/i/BqRxa0pO.jpg@200w"); }
+    .page-sample.sample2 .s2.works .img.i6 {
+      background-image: url("http://img.teamkn.com/i/DhxsQ6lq.jpg@200w"); }
+    .page-sample.sample2 .s2.works .img.i7 {
+      background-image: url("http://img.teamkn.com/i/wVAEKa0F.jpg@200w"); }
+    .page-sample.sample2 .s2.works .img.i8 {
+      background-image: url("http://img.teamkn.com/i/GvadbyxR.jpg@200w"); }
+    .page-sample.sample2 .s2.works .img.i9 {
+      background-image: url("http://img.teamkn.com/i/D4Tkko8b.jpg@200w"); }
+    .page-sample.sample2 .s2.works .img.i10 {
+      background-image: url("http://img.teamkn.com/i/sFokcStZ.jpg@200w"); }
+    .page-sample.sample2 .s2.works .img.i11 {
+      background-image: url("http://img.teamkn.com/i/C8p1BZ3m.jpg@200w"); }
+    .page-sample.sample2 .s2.works .img.i12 {
+      background-image: url("http://img.teamkn.com/i/qZnvgddO.jpg@200w"); }
+    .page-sample.sample2 .s2.works .img {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px; }
+    .page-sample.sample2 .s2.works .ii {
+      position: relative;
+      width: 33.33333%;
+      float: left;
+      padding-bottom: 33.33333%; }
+      .page-sample.sample2 .s2.works .ii.h {
+        padding-bottom: 66.66667%; }
