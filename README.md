@@ -1,5 +1,6 @@
 Slider
 ================
+移动课程/演示文稿编辑发布服务，slider 是暂定名
 
 This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
 provided by the [RailsApps Project](http://railsapps.github.io/).
