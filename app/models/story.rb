@@ -19,12 +19,38 @@ class Story
   # 这个字段保存 body 中的内容
   field :html_body
 
+  # 修改后的页面正文
+  # 这个字段保存 body 中的内容
+  field :edit_html_body
+
   # 是否发布
-  field :is_published, type: Boolean
+  field :published_at, type: Time
 
   # 创建者
   belongs_to :user
 
   # 可以引用多个模板
   has_and_belongs_to_many :templates
+
+  def edited?
+    edit_html_body != html_body
+  end
+
+  def published?
+    !!published_at
+  end
+
+  def publish!
+    if !edit_html_body.nil? and edit_html_body != html_body
+      update_attributes html_body: edit_html_body, published_at: Time.now
+    end
+  end
+
+  def state_text
+    if published?
+      edited? ? '[新版本待发布]' : ''
+    else
+      '[未发布]'
+    end
+  end
 end
