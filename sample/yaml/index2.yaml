@@ -1,0 +1,481 @@
+- breakfast:
+  - name: 小米粥
+    img: http://img.teamkn.com/i/AqajgqCA.png
+    cal: 46
+    rank: A
+  - name: 花卷
+    img: http://img.teamkn.com/i/WyuWMEYE.png
+    cal: 211
+    rank: B
+  - name: 蒸鸡蛋
+    img: http://img.teamkn.com/i/gIM4uHBQ.png
+    cal: 42
+    rank: A+
+  - name: 拌黄瓜
+    img: http://img.teamkn.com/i/VGGULykD.png
+    cal: 51
+    rank: A+
+  - name: 豆奶
+    img: http://img.teamkn.com/i/yXHNf00L.png
+    cal: 39
+    rank: C
+  meal_a:
+  - name: 西红柿
+    img: http://img.teamkn.com/i/DQDfri67.png
+    cal: 19
+    rank: A+
+  lunch:
+  - name: 荞麦大米饭
+    img: http://img.teamkn.com/i/gSrkaSbg.png
+    cal: 120
+    rank: B+
+  - name: 酱肝片
+    img: http://img.teamkn.com/i/YcJaSBiu.png
+    cal: 123
+    rank: A+
+  - name: 香菇菜心
+    img: http://img.teamkn.com/i/nu6Q8fy3.png
+    cal: 43
+    rank: A+
+  - name: 香干拌黄瓜
+    img: http://img.teamkn.com/i/LDqjpbDD.png
+    cal: 85
+    rank: A
+  - name: 烧花菜
+    img: http://img.teamkn.com/i/iToK6rF6.png
+    cal: 109
+    rank: B+
+  - name: 丝瓜汤
+    img: http://img.teamkn.com/i/pi46jW0P.png
+    cal: 32
+    rank: A+
+  meal_b:
+  - name: 西瓜
+    img: http://img.teamkn.com/i/fg9KFbRq.png
+    cal: 25
+    rank: A+
+  dinner:
+  - name: 绿豆大米粥
+    img: http://img.teamkn.com/i/cpqARwyg.png
+    cal: 65
+    rank: A
+  - name: 红烧牛肉
+    img: http://img.teamkn.com/i/DDz3RTxd.png
+    cal: 65
+    rank: A
+  - name: 虾皮冬瓜汤
+    img: http://img.teamkn.com/i/WkCUFs2d.png
+    cal: 12
+    rank: A+
+
+- breakfast:
+  - name: 豆浆大枣大米粥
+    img: http://img.teamkn.com/i/iUESTOCk.png
+    cal: 47
+    rank: A
+  - name: 煮鸡蛋
+    img: http://img.teamkn.com/i/dgbKL6gU.png
+    cal: 151
+    rank: B+
+  - name: 玉米面窝窝头
+    img: http://img.teamkn.com/i/eK4PXNXb.png
+    cal: 233
+    rank: B
+  - name: 酱肝片
+    img: http://img.teamkn.com/i/YcJaSBiu.png
+    cal: 123
+    rank: A+
+  - name: 豆腐乳
+    img: http://img.teamkn.com/i/RtJoDeoe.png
+    cal: 156
+    rank: B
+  meal_a:
+  - name: 枇杷
+    img: http://img.teamkn.com/i/HrVr7erD.png
+    cal: 39
+    rank: A+
+  lunch:
+  - name: 花生米饭
+    img: http://img.teamkn.com/i/tIO6iyAG.png
+    cal: 125
+    rank: B+
+  - name: 包子
+    img: http://img.teamkn.com/i/DIpCwfKB.png
+    cal: 163
+    rank: B
+  - name: 糖醋黄瓜
+    img: http://img.teamkn.com/i/LHr5JnQX.png
+    cal: 46
+    rank: A
+  - name: 青椒土豆丝
+    img: http://img.teamkn.com/i/XnZbFavL.png
+    cal: 72
+    rank: A
+  - name: 鸭子海带汤
+    img: http://img.teamkn.com/i/YhuGi0SN.png
+    cal: 72
+    rank: A
+  meal_b:
+  - name: 蜜桃
+    img: http://img.teamkn.com/i/b5TGwY3l.png
+    cal: 41
+    rank: A+
+  dinner:
+  - name: 大米粥
+    img: http://img.teamkn.com/i/bHaQ9gNK.png
+    cal: 46
+    rank: A
+  - name: 红烧丸子
+    img: http://img.teamkn.com/i/mH20NYmo.png
+    cal: 253
+    rank: C+
+  - name: 胡萝卜
+    img: http://img.teamkn.com/i/B9KA960p.png
+    cal: 37
+    rank: A+
+  - name: 青椒肉丝
+    img: http://img.teamkn.com/i/FOlUaIRk.png
+    cal: 99
+    rank: A
+
+- breakfast:
+  - name: 大米粥
+    img: http://img.teamkn.com/i/bHaQ9gNK.png
+    cal: 46
+    rank: A
+  - name: 豆沙包
+    img: http://img.teamkn.com/i/gJSyZWWA.png
+    cal: 224
+    rank: B
+  - name: 盐水花生米
+    img: http://img.teamkn.com/i/I8eNO4Xo.png
+    cal: 482
+    rank: C+
+  - name: 咸鸭蛋
+    img: http://img.teamkn.com/i/at4NScWm.png
+    cal: 190
+    rank: B
+  - name: 素炒三丝
+    img: http://img.teamkn.com/i/qP7yRckH.png
+    cal: 99
+    rank: B+
+  meal_a:
+  - name: 豆奶
+    img: http://img.teamkn.com/i/yXHNf00L.png
+    cal: 39
+    rank: C
+  - name: 鸭梨
+    img: http://img.teamkn.com/i/lajGI4Ks.png
+    cal: 43
+    rank: A+
+  lunch:
+  - name: 红枣大米饭
+    img: http://img.teamkn.com/i/LIW7ASbz.png
+    cal: 153
+    rank: B
+  - name: 黄豆烧牛肉
+    img: http://img.teamkn.com/i/QYdjA8KH.png
+    cal: 144
+    rank: A+
+  - name: 红烧鳊鱼
+    img: http://img.teamkn.com/i/cuCZkzli.png
+    cal: 130
+    rank: A+
+  - name: 干煸四季豆
+    img: http://img.teamkn.com/i/Z4hdVShu.png
+    cal: 117
+    rank: A+
+  - name: 香菜萝卜汤
+    img: http://img.teamkn.com/i/gCsCspuz.png
+    cal: 23
+    rank: A+
+  meal_b:
+  - name: 桔子
+    img: http://img.teamkn.com/i/jlpFBZKP.png
+    cal: 51
+    rank: A
+  dinner:
+  - name: 花卷
+    img: http://img.teamkn.com/i/WyuWMEYE.png
+    cal: 211
+    rank: B
+  - name: 瘦肉丝炒芹菜
+    img: http://img.teamkn.com/i/yAQ8k9uS.png
+    cal: 75
+    rank: A
+  - name: 青椒土豆丝
+    img: http://img.teamkn.com/i/XnZbFavL.png
+    cal: 72
+    rank: A
+  - name: 三鲜面片
+    img: http://img.teamkn.com/i/W0yIQoHE.png
+    cal: 73
+    rank: A
+  - name: 西红柿鸡蛋汤
+    img: http://img.teamkn.com/i/VoLGabMd.png
+    cal: 14
+    rank: A+
+
+- breakfast:
+  - name: 豆浆大米粥
+    img: http://img.teamkn.com/i/iUESTOCk.png
+    cal: 47
+    rank: A
+  - name: 苹果酱花卷
+    img: http://img.teamkn.com/i/dOn6mAP7.png
+    cal: 240
+    rank: B
+  - name: 拌海带白菜丝
+    img: http://img.teamkn.com/i/xwRuykEi.png
+    cal: 27
+    rank: A+
+  - name: 米粥肉包
+    img: http://img.teamkn.com/i/HpGNRQvi.png
+    cal: 300
+    rank: B
+  - name: 茶叶蛋
+    img: http://img.teamkn.com/i/l0Fd0KW2.png
+    cal: 144
+    rank: B+
+  meal_a:
+  - name: 牛奶
+    img: http://img.teamkn.com/i/waFbUHwd.png
+    cal: 54
+    rank: A
+  - name: 香蕉
+    img: http://img.teamkn.com/i/eQIU7Nsq.png
+    cal: 91
+    rank: A+
+  lunch:
+  - name: 高粱白米饭
+    img: http://img.teamkn.com/i/c8B9cDXL.png
+    cal: 120
+    rank: C+
+  - name: 香菇黄花黑木耳肉片
+    img: http://img.teamkn.com/i/n2n94eaS.png
+    cal: 98
+    rank: B+
+  - name: 鸡块冬瓜汤
+    img: http://img.teamkn.com/i/zYaWEIU9.png
+    cal: 36
+    rank: A+
+  meal_b:
+  - name: 西瓜
+    img: http://img.teamkn.com/i/fg9KFbRq.png
+    cal: 25
+    rank: A+
+  dinner:
+  - name: 大米饭
+    img: http://img.teamkn.com/i/jf88Yf4W.png
+    cal: 116
+    rank: A+
+  - name: 葱花拌蒸豆腐
+    img: http://img.teamkn.com/i/fssAR51V.png
+    cal: 104
+    rank: B+
+  - name: 青椒芹菜肉丝
+    img: http://img.teamkn.com/i/hPA2gDyt.png
+    cal: 87
+    rank: A
+  - name: 鱼头豆腐汤
+    img: http://img.teamkn.com/i/uaygPleN.png
+    cal: 38
+    rank: A+
+
+- breakfast:
+  - name: 红枣大米粥
+    img: http://img.teamkn.com/i/iUESTOCk.png
+    cal: 47
+    rank: A
+  - name: 小笼包
+    img: http://img.teamkn.com/i/WkTZvAXx.png
+    cal: 230
+    rank: B
+  - name: 鹌鹑蛋
+    img: http://img.teamkn.com/i/FMla7Iit.png
+    cal: 160
+    rank: B+
+  - name: 香干拌芹菜黄瓜
+    img: http://img.teamkn.com/i/yAN6Vlo7.png
+    cal: 66
+    rank: A
+  meal_a:
+  - name: 猕猴桃
+    img: http://img.teamkn.com/i/fQGt5Lqd.png
+    cal: 56
+    rank: A
+  lunch:
+  - name: 水饺
+    img: http://img.teamkn.com/i/j1VB4114.png
+    cal: 204
+    rank: B
+  - name: 凉拌肚丝
+    img: http://img.teamkn.com/i/CCcZv8C8.png
+    cal: 99
+    rank: B+
+  meal_b:
+  - name: 香蕉
+    img: http://img.teamkn.com/i/eQIU7Nsq.png
+    cal: 91
+    rank: A+
+  dinner:
+  - name: 大米饭
+    img: http://img.teamkn.com/i/jf88Yf4W.png
+    cal: 116
+    rank: A+
+  - name: 芹菜肉丝
+    img: http://img.teamkn.com/i/hPA2gDyt.png
+    cal: 87
+    rank: A
+  - name: 西红柿炒鸡蛋
+    img: http://img.teamkn.com/i/NAldeOT9.png
+    cal: 86
+    rank: A
+  - name: 肉末豆腐脑
+    img: http://img.teamkn.com/i/guiUsY7c.png
+    cal: 47
+    rank: A
+  - name: 大白菜豆腐汤
+    img: http://img.teamkn.com/i/OdXNrOgs.png
+    cal: 38
+    rank: A+
+
+- breakfast:
+  - name: 豆浆
+    img: http://img.teamkn.com/i/zcEsJtWq.png
+    cal: 14
+    rank: A+
+
+  - name: 蛋糕
+    img: http://img.teamkn.com/i/yo8613J9.png
+    cal: 347
+    rank: C+
+
+  - name: 煎蛋
+    img: http://img.teamkn.com/i/TdDAbHER.png
+    cal: 209
+    rank: B
+
+  - name: 拌豆芽粉丝
+    img: http://img.teamkn.com/i/rsNWpks5.png
+    cal: 39
+    rank: A+
+
+  meal_a:
+  - name: 草莓
+    img: http://img.teamkn.com/i/ZMoAbk12.png
+    cal: 30
+    rank: A+
+
+  lunch:
+  - name: 米饭
+    img: http://img.teamkn.com/i/bymfsoh5.png
+    cal: 116
+    rank: A+
+
+  - name: 土豆烧牛肉
+    img: http://img.teamkn.com/i/tix7qaCf.png
+    cal: 130
+    rank: A+
+
+  - name: 凉拌五丝
+    img: http://img.teamkn.com/i/z3RPe4yi.png
+    cal: 112
+    rank: B+
+
+  - name: 香菇木耳鸡汤
+    img: http://img.teamkn.com/i/m7kXvFAA.png
+    cal: 21
+    rank: A+
+
+  meal_b:
+  - name: 山楂片
+    img: http://img.teamkn.com/i/wx8Bq1E6.png
+    cal: 369
+    rank: C
+
+  dinner:
+  - name: 牛肉面
+    img: http://img.teamkn.com/i/i4Wbvapm.png
+    cal: 111
+    rank: A
+
+- breakfast:
+  - name: 玉米面豆奶粥
+    img: http://img.teamkn.com/i/i6FYzfMS.png
+    cal: 45
+    rank: A+
+
+  - name: 鸡蛋煎饼
+    img: http://img.teamkn.com/i/dGqxxfkd.png
+    cal: 184
+    rank: B+
+
+  - name: 凉拌圆白菜
+    img: http://img.teamkn.com/i/ElSDyKXu.png
+    cal: 46
+    rank: A
+
+  - name: 煮花生米
+    img: http://img.teamkn.com/i/iYGP05gW.png
+    cal: 522
+    rank: C+
+
+  meal_a:
+  - name: 牛奶
+    img: http://img.teamkn.com/i/ouR49PqA.png
+    cal: 54
+    rank: A
+
+  - name: 苹果
+    img: http://img.teamkn.com/i/NjbKPqT2.png
+    cal: 52
+    rank: A
+
+  lunch:
+  - name: 玉米饭
+    img: http://img.teamkn.com/i/ahc2ziRJ.png
+    cal: 94
+    rank: A+
+
+  - name: 蒸饺
+    img: http://img.teamkn.com/i/cnbhUaNt.png
+    cal: 109
+    rank: A+
+
+  - name: 糖醋排骨
+    img: http://img.teamkn.com/i/ES5K7GtA.png
+    cal: 338
+    rank: C+
+
+  - name: 绿豆南瓜汤
+    img: http://img.teamkn.com/i/RcLxIVLz.png
+    cal: 149
+    rank: A
+
+  meal_b:
+  - name: 煮蜜枣
+    img: http://img.teamkn.com/i/b1cPyZfW.png
+    cal: 321
+    rank: B+
+
+  dinner:
+  - name: 韭菜猪肉饺子
+    img: http://img.teamkn.com/i/a3FkFlMH.png
+    cal: 250
+    rank: C+
+
+  - name: 火爆腰花
+    img: http://img.teamkn.com/i/zDRJ4D3Q.png
+    cal: 76
+    rank: A
+
+  - name: 肉末炒豇豆
+    img: http://img.teamkn.com/i/gjhLX2HZ.png
+    cal: 112
+    rank: B+
+
+  - name: 白菜
+    img: http://img.teamkn.com/i/X8LhkEPT.png
+    cal: 15
+    rank: A+

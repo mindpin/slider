@@ -1,6 +1,56 @@
 $fa-font-path: "../../src/lily/fonts" !default;
 $source-code-font-path: "../../src/lily/fonts/source-code" !default;
+$futura-font-path: "../../src/lily/fonts/futura";
+
 @import "../lily/css/lily.scss";
+
+@mixin cover-bg($url) {
+  background-image: url(#{$url});
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@mixin prefixer($name, $params...) {
+  -webkit-#{$name}: $params;
+  -moz-#{$name}: $params;
+  -ms-#{$name}: $params;
+  -o-#{$name}: $params;
+  #{$name}: $params;
+}
+
+@mixin animation($params) {
+  @include prefixer(animation, $params);
+}
+
+@mixin shape-outside($params...) {
+  @include prefixer("shape-outside", $params...);
+}
+
+@mixin clip-path($params...) {
+  @include prefixer("clip-path", $params...);
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { @content; }
+  @-moz-keyframes #{$name} { @content; }
+  @-ms-keyframes #{$name} { @content; }
+  @keyframes #{$name} { @content; } 
+}
+
+@include keyframes(yaohuang) {
+  0%   { @include transform(rotate(-15deg)) }
+  50%  { @include transform(rotate(15deg)) }
+  100% { @include transform(rotate(-15deg)) }
+}
+
+@include keyframes(yaohuang1) {
+  0%   { @include transform(rotate(30deg)) }
+  50%  { @include transform(rotate(-30deg)) }
+  100% { @include transform(rotate(30deg)) }
+}
+
+
 
 body {
   background-color: #f1f1f1;
@@ -9,6 +59,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow:hidden;
+  @include -below(pad) {
+    background-image: none;
+  }
 }
 
 [data-sr] { visibility: hidden; }
@@ -232,5 +285,199 @@ body {
         padding-bottom: percentage(2/3);
       }
     }
+  }
+}
+
+.page-sample.sample3{
+  // @include bg-linear-gradient(#FFFFFF, #F8EFC1);
+  background-color: #FaFaFa;
+  background: url(http://img.teamkn.com/i/cm3oMoJd.png);
+  // background: url(http://img.teamkn.com/i/NvvSSbG7.png);
+
+  .cookbook {
+    .meal {
+      margin-bottom: 40px;
+      .chname {
+        // text-align: center;
+        color: #606060;
+        font-size: 32px;
+        border-bottom: dashed 1px #CFCFCD;
+        line-height: 32px;
+        padding:15px;
+        span {
+          display: inline-block;
+          margin-right: 3px;
+          @include animation(yaohuang 2s infinite linear);
+        }
+      }
+      .engname {
+        padding-bottom: 30px;
+        padding: 15px 30px;
+        // font-family: Futura-Condensed;
+        // font-family: $font-family-serif;
+        // text-align: right;
+        font-size: 24px;
+        opacity: 0.5;
+        margin-bottom: 30px;
+        span {
+          margin-right: 3px;
+          display: inline-block;
+          @include animation(yaohuang1 2s infinite linear);
+        }
+      }
+      .food {
+        margin-bottom: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        @include clearfix;
+        position: relative;
+
+        &:last-child {
+          .fimg:after {display:none;}
+        }
+
+        .fname {
+          // color: #606060;
+          opacity: 0.5;
+          font-size: 24px;
+          // text-align: center;
+          text-shadow: 0 0 5px rgba(black, 0.1);
+          // position: absolute;
+          // top: 0;
+          // left: percentage(1/5);
+          margin-bottom: 15px;
+          display: none;
+        }
+
+        .fimg {
+          // &:after {
+          //   position: absolute;
+          //   content: "";
+          //   width: 46px; height: 9px;
+          //   @include cover-bg("http://img.teamkn.com/i/aeEoo7RX.png");
+          //   left:percentage(1/2); bottom:-25px;
+          //   margin-left: -23px;
+          // }
+
+          width: percentage(1/5);
+          padding-bottom: percentage(1/5);
+          position: relative;
+          float: left;
+
+          .fibox {
+            $bm: 0;
+            position: absolute;
+            top:$bm;left:$bm;right:$bm;bottom:$bm;
+            box-shadow:0px 0px 5px rgba(black, 0.1);
+            background-color: #FFF;
+            // border-radius: 1000px 0 1000px 1000px;
+
+            .fibox1 {
+              $bw: 5px;
+              position: absolute;
+              top:$bw;left:$bw;right:$bw;bottom:$bw;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+              // border-radius: 1000px 0 1000px 1000px;
+            }
+          }
+        }
+
+        .power {
+          width: percentage(2/5);
+          padding-bottom: percentage(1/5);
+          position: relative;
+          float: left;
+          margin-left: 15px;
+          .pbox {
+            $bm: 0;
+            position: absolute;
+            top:$bm;left:$bm;bottom:$bm;right:$bm;
+            background-color: #FBFAF8;
+            box-shadow:0px 0px 5px rgba(black, 0.1);
+            // border-radius:0 25%/50%;
+            // border-radius: 0 25%/50%;
+
+            .cal {
+              $pd: 5px;
+              position: absolute;
+              top:$pd;left:$pd;bottom:$pd;
+              width:calc(50% - 7px);
+              box-sizing:border-box;
+              border:dashed 1px #D2D2D0;
+              // border-radius: 0 0 0 50%;
+
+              // @include cover-bg("http://img.teamkn.com/i/dHUH4u11.png");
+              background-color: #F9F4E2;
+
+              &:after {
+                display: block;
+                content: '卡路里';
+                font-size: 12px;
+                text-align: center;
+                color: #B26C3B;
+                @include transform(scale(0.7));
+                position: absolute;
+                bottom:8px;left:0;right:0;height:12px;
+              }
+
+              span {
+                $fz: 30px;
+                font-family: Futura-Condensed;
+                font-size: $fz;line-height:$fz;
+                height: $fz;
+                text-align: center;
+                color: #D26441;
+                position: absolute;
+                top:50%;left:0;right:0;
+                margin-top: - $fz / 2 - 7px;
+                font-weight: bold;
+              }
+            }
+            .rank {
+              $pd: 5px;
+              position: absolute;
+              top:$pd;right:$pd;bottom:$pd;
+              width:calc(50% - 10px);
+              border:dashed 1px #D2D2D0;
+              // border-radius: 0 50% 0 0;
+
+              span {
+                font-family: Futura-Condensed;
+                font-size: 32px;line-height:32px;
+                height: 32px;
+                text-align: center;
+                position: absolute;
+                top:50%;left:0;right:0;
+                margin-top: -16px;
+                font-weight: bold;
+              }
+              &.A {color:#0090DA;background-color:rgba(#0090DA, 0.1)}
+              &.B {color:#55AA00;background-color:rgba(#55AA00, 0.1)}
+              &.C {color:#FFAA00;background-color:rgba(#FFAA00, 0.1)}
+              &.D {color:#FF3333;background-color:rgba(#FF3333, 0.1)}
+              &.E {color:#555566;background-color:rgba(#555566, 0.1)}
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.test-container {
+  .shaped {
+    height:200px;
+    width:100px;
+    background: url(http://img.teamkn.com/i/i4Wbvapm.png@400w) no-repeat center center;
+    background-size: cover;
+    float: right;
+
+    // // shape-outside: polygon（0 0, 100% 0, 100% 100%,30% 100%）;
+    // @include shape-outside(polygon(0 0, 100px 0, 100px 200px, 50px 200px));
+    // @include clip-path(polygon(0 0, 100px 0, 100px 200px, 50px 200px));
+    // shape-margin: 20px;
   }
 }
