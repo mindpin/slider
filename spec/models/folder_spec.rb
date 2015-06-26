@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-describe Folder do
+describe Folder, type: :model do
 
   before(:each) {
-    @user = User.new(email: 'user@example.com') 
+    @user = create(:user)
     @folder = @user.folders.create(name: 'name', desc: 'name')
   }
 
