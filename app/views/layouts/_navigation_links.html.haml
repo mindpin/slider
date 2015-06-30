@@ -1,4 +1,5 @@
 - if user_signed_in?
+  %li= link_to '我的作品', stories_path
   %li= link_to '登出', destroy_user_session_path, :method=>'delete'
 - else
   %li= link_to '新浪微博登录', new_user_session_path
