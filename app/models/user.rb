@@ -36,8 +36,8 @@ class User
   # field :unlock_token,    type: String # Only if unlock strategy is :email or :both
   # field :locked_at,       type: Time
 
-  field :nickname,    type: String
-  field :avatar_url,    type: String
+  field :name,       type: String
+  field :avatar_url, type: String
 
   has_many :user_tokens
   has_many :folders
@@ -59,9 +59,9 @@ class User
     if omniauth['credentials'].blank?
       user_tokens.build(:provider => omniauth['provider'], :uid => omniauth['uid'])
     else
-      user_tokens.build(:provider => omniauth['provider'], 
+      user_tokens.build(:provider => omniauth['provider'],
                         :uid => omniauth['uid'],
-                        :token => omniauth['credentials']['token'], 
+                        :token => omniauth['credentials']['token'],
                         :expires_at => omniauth['credentials']['expires_at'])
     end
   end
@@ -72,5 +72,61 @@ class User
 
   def email_required?
     false
+  end
+
+  def self.from_weibo_omniauth(auth_hash)
+    omniauth_info = self._get_info_form_weibo_omniauth(auth_hash)
+    self.from_omniauth_info(omniauth_info)
+  end
+
+  def self.from_omniauth_info(omniauth_info)
+    uid        = omniauth_info[:uid]
+    provider   = omniauth_info[:provider]
+    token      = omniauth_info[:token]
+    expires_at = omniauth_info[:expires_at]
+    expires    = omniauth_info[:expires]
+    avatar_url = omniauth_info[:avatar_url]
+    user_name  = omniauth_info[:user_name]
+
+    # 若不存在对应的 user_token 则创建
+    # 若存在则更新
+    user_token = UserToken.where(
+      :uid      => uid,
+      :provider => provider
+    ).first_or_initialize
+
+    user_token.update_attributes(
+      :token      => token,
+      :expires_at => expires_at,
+      :expires    => expires
+    )
+
+    # 若不存在对应的 user 则创建
+    # 若存在则更新
+    user = user_token.user ||
+      User.create!(
+        :name => user_name,
+        :user_tokens => [user_token],
+        :password => Devise.friendly_token.first(8)
+      )
+
+    user.update_attributes(
+      :name => user_name,
+      :avatar_url => avatar_url
+    )
+
+    return user
+  end
+
+  def self._get_info_form_weibo_omniauth(auth_hash)
+    {
+      uid:        auth_hash.uid,
+      provider:   auth_hash.provider,
+      token:      auth_hash.credentials.token,
+      expires_at: auth_hash.credentials.expires_at,
+      expires:    auth_hash.credentials.expires,
+      avatar_url: auth_hash.extra.raw_info.avatar_large,
+      user_name:  auth_hash.info.nickname
+    }
   end
 end
