@@ -1,8 +1,9 @@
 FactoryGirl.define do
   factory :story do
-    title 'title'
-    desc 'desc'
-    html_body 'html_body'
+    sequence(:title){|n| "title #{n}"}
+    sequence(:desc){|n| "desc #{n}"}
+    sequence(:html_body){|n| "html_body #{n}"}
+    sequence(:edit_html_body){|n| "edit_html_body #{n}"}
   end
 
 end

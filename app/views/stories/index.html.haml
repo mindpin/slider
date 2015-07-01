@@ -1,0 +1,27 @@
+.clearfix
+  %a.btn.btn-primary{href: new_story_path} 新建作品
+
+- @stories.each do |story|
+  .story.pull-left{style: 'width:510px;'}
+    .logo.pull-left
+    .content.pull-right
+      .title
+        = story.title
+        = story.state_text
+      .url= story_url(story)
+      .actions
+        - if story.published?
+          %a.show{href: story_path(story)} 查看
+          %a.count{href: 'javascript:;'} 统计
+        - else
+          %a.show.disabled{href: story_path(story)} 查看
+          %a.count.disabled{href: 'javascript:;'} 统计
+
+        %a.edit{href: edit_story_path(story)} 编辑
+        %a.delete{href: 'javascript:;'} 删除
+      .published_at
+        发布时间:
+        = (story.published_at || '--').to_s
+    .clearfix
+
+.clearfix
