@@ -15,4 +15,11 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require mindpin_buckets
+
+//= require lib/randstr
+//= require lib/canvas-to-blob.min
+//= require lib/plupload.full.min
+//= require lib/qiniu.min
+//= require uploader
+
 //= require_tree .

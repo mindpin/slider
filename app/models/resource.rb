@@ -2,8 +2,12 @@ class Resource
   include MindpinBuckets::BucketResourceMethods
   act_as_bucket_resource into: :folder
 
+  extend Enumerize
+  KINDS = [:image, :audio, :video, :location]
+
   # 资源类型
   field :kind, type: String
+  enumerize :kind, in: KINDS
 
   # 纯文本类型的内容
   field :text, type: String
@@ -18,6 +22,8 @@ class Resource
 
   # 创建者
   belongs_to :user
+
+  def qiniu_url
+    File.join(ENV["QINIU_DOMAIN"], qiniu_path)
+  end
 end
-
-

@@ -21,7 +21,7 @@ gem 'bootstrap-sass'
 gem 'cells'
 gem 'devise'
 gem 'elastic_searchable'
-gem 'figaro', '>= 1.0.0.rc1'
+gem 'figaro', '>= 1.1.0'
 gem 'haml-rails'
 gem 'kaminari'
 gem 'mina', :github=>"fushang318/mina", :tag=>"v0.2.0fix"
@@ -63,3 +63,4 @@ end
 
 gem 'activesupport'
 gem 'mindpin_buckets', github: 'destinyd/mindpin_buckets'
+gem 'enumerize'
