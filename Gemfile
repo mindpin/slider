@@ -64,3 +64,4 @@ end
 gem 'activesupport'
 gem 'mindpin_buckets', github: 'destinyd/mindpin_buckets'
 gem 'enumerize'
+gem 'mustache'

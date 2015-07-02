@@ -23,6 +23,9 @@ class Story
   # 这个字段保存 body 中的内容
   field :edit_html_body
 
+  # 保存对应模版的数据, 用于生成最终的html
+  field :data
+
   # 是否发布
   field :published_at, type: Time
 
@@ -31,6 +34,18 @@ class Story
 
   # 可以引用多个模板
   has_and_belongs_to_many :templates
+
+  def to_html
+    if data.blank?
+      ''
+    else
+      array = JSON.parse data
+      array.map do |hash|
+        # TODO 理论上使用templates是不会出错的，但是要做好各种限制
+        Mustache.render templates.find(hash.keys.first).body, hash.values.first
+      end.join
+    end
+  end
 
   def edited?
     edit_html_body != html_body

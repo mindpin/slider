@@ -13,5 +13,11 @@ class Template
   # 简介
   field :desc, type: String
 
+  # 保存对应模版
+  field :body
+
+  # 保存演示html
+  field :sample_html
+
   # 正文的表现形式不明，先不设计
 end
