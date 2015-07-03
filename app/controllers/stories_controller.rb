@@ -6,6 +6,7 @@ class StoriesController < ApplicationController
 
   def show
     @story = Story.find params[:id]
+    _add_story_visit_record(@story)
   end
 
   def new
@@ -38,5 +39,12 @@ class StoriesController < ApplicationController
   private
   def story_params
     params.require(:story).permit(:logo, :title, :desc, :edit_html_body)
+  end
+
+  def _add_story_visit_record(story)
+    story.story_visit_records.create(
+      :ip    = request.remote_ip,
+      :uv_id = get_uv_id
+    )
   end
 end

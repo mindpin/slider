@@ -1,6 +1,7 @@
 class Story
   include Mongoid::Document
   include Mongoid::Timestamps
+  include StoryVisitRecord::StoryMethods
 
   # logo title desc 这三个字段的内容用来生成类似 infocard 的显示效果
   # 在朋友圈，微博分享的时候显示这个 infocard
